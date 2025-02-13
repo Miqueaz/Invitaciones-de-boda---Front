@@ -1,0 +1,380 @@
+:root {
+  --greenery: #88B04B; /* Verde Follaje */
+  --snow-white: #ffffff; /* Blanco Nieve fcfbf8 */
+  --soft-olive: #A4B494; /* Verde Oliva Suave */
+  --neutral-beige: #E6E2D3; /* Beige Neutro */
+  --dusty-pink: #D9BEBE; /* Rosa Palo */
+  --soft-gold: #C7A589; /* Dorado Sutil (Champán) */
+  --stone-gray: #B3B3B3; /* Gris Piedra */
+  --eucalyptus-green: #678D58; /* Verde Eucalipto */
+  --cafe: #595232; /* Café */
+
+    --background-color: var(--white-color);
+    --border-color: var(--cafe);
+    --box-shadow-color: rgba(0, 0, 0, 0.1);
+    --text-color-primary: var(--cafe);
+    --text-color-secondary: var(--dusty-pink);
+    --text-color-tertiary: var(--stone-gray);
+    --text-color-quaternary: var(--soft-gold);
+    --button-background-color: var(--soft-olive);
+    --button-hover-color: var(--eucalyptus-green);
+    --white-color: var(--snow-white);
+  
+    --font-size: 16px;
+    --font-family: 'Be Vietnam';
+    --font-family-secondary: 'Alex Brush';
+    --font-family-tertiary: 'Be Vietnam Bold';
+}
+
+@font-face {
+  font-family: 'Alex Brush';
+  src: url('fonts/alex-brush/AlexBrush-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Be Vietnam';
+  src: url('fonts/be-vietnam/BeVietnam-Thin.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Be Vietnam Bold';
+  src: url('fonts/be-vietnam/BeVietnam-Bold.ttf') format('truetype');
+}
+
+
+
+
+
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.header {
+  position: relative;
+  height: 50vh;
+  background: url('OIP.jpg') no-repeat center center/cover; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.papel {
+  position: absolute;
+  z-index: 1;
+  background: url('papel2.png') no-repeat center center/cover; 
+  width: 100%;
+  height: 100px;
+  flex: 1;
+  bottom: -42px;
+ 
+  
+  align-items: flex-start;
+}
+
+.decoration{
+  position: absolute;
+  z-index: -1;
+  /* flex: 1; */
+}
+
+.d1{
+  background: url('decoraciones/planta1.webp') no-repeat center center/cover;
+  width: 110px;
+  height: 120px; 
+}
+
+.d2{
+  background: url('decoraciones/planta2.png') no-repeat center center/cover;
+  width: 100px;
+  height: 80px;
+  /* margin-right: -35px; */
+  margin-top: -40px;
+  /* padding-right: 60px; */
+
+  right: 0;
+  transform: rotate(85deg);
+}
+
+.d3{
+  background: url('decoraciones/planta3.webp') no-repeat center center/cover;
+  width: 75px;
+  height: 230px; 
+  left: 0px;
+  margin-top: 25px;
+}
+
+.d4{
+  background: url('decoraciones/planta4.webp') no-repeat center center/cover;
+  width: 110px;
+  height: 120px; 
+}
+
+.d5{
+  background: url('decoraciones/mancha1.png') no-repeat center center/cover;
+  width: 220px;
+  height: 220px; 
+  margin-top: -120px;
+ 
+
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.header h1, .header h2 {
+    margin: 0;
+    padding: 0;
+}
+.header h1 {
+  font-family: var(--font-family-secondary);
+  font-size: 56px;
+  margin-bottom: 5px;
+  color: var(--white-color);
+  letter-spacing: 3px;
+}
+.header h2 {
+  font-family: var(--font-family-secondary);
+  font-size: 20px;
+  margin: 10px 0;
+  color: var(--white-color);
+  letter-spacing: 2px;
+}
+
+.spam {
+  color: var(--text-color-primary);
+  font-family: var(--font-family-secondary);
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+
+.spam h2{
+  color: var(--text-color-primary);
+  font-family: var(--font-family-secondary);
+  font-size: 30px;
+  letter-spacing: 3px;
+}
+
+.family{
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+  /* width: 500px; */
+}
+
+.line{
+  height: 100px;
+}
+
+.x {
+  border-left: 2px solid var(--border-color);
+}
+
+.y {
+  border-top: 2px solid var(--border-color);
+
+}
+
+.family1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  margin-right: 20px ;
+}
+
+.family2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 7px;
+  margin-left: 20px;
+}
+
+.family h2{
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.family h1{
+  font-family: var(--font-family-tertiary);
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid var(--border-color);
+}
+
+.invitation .dress-code .dressCodeImg {
+  background: url('Dress\ code.png') no-repeat center center/cover;
+  width: 220px;
+  height: 220px; 
+  margin-top: 80px;
+  /* justify-content: center; */
+  position: absolute;
+  
+}
+
+.invitation .dress-code {
+  font-size: 14px;
+  margin-top:-60px;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color-tertiary);
+}
+
+.invitation .dress-code .dress {
+  justify-content: center;
+  display: flex;
+  flex: 1;
+}
+
+.dress h3 {
+  flex: 1;
+  font-family: var(--font-family); 
+  font-size: 12px;
+}
+
+.dress .spam .code{
+  flex: 1;
+  justify-content: start;
+  align-items: start;
+}
+
+.dress .spam {
+  width: 260px;
+
+}
+
+.dress .mujer{
+  margin-right: -30px;  
+}
+
+.invitation {
+    background: var(--white-color);
+    height: 100%;
+    padding: 0px;
+    text-align: center;
+    z-index: 1;
+    margin-top: 40px;
+    position: relative;
+
+    color: var(--text-color-primary);
+
+    /* border-top-left-radius: 10px; */
+    /* border-top-right-radius: 10px; */
+
+}
+.invitation .date-time {
+  font-family: var(--font-family-tertiary);
+    margin-top: -35px;
+}
+.invitation .date-time .date {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  align-items: center;  
+  height: 120px;
+}
+.invitation .date-time .time {
+  margin: 0;
+  padding: 0;
+}
+.invitation .date-time .time h2{
+  margin: 0;
+  padding: 0;
+  margin-top: -30px;
+  font-size: 30px;
+  /* font-family: "Be Vietnam Bold"; */
+}
+.invitation .date-time .container1{
+  width: 120px;
+  border-top: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--border-color);
+}
+.invitation .date-time .container1 h2{
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+.invitation .date-time .container2{
+  margin: 15px;
+}
+.invitation .date-time .container2 h2{
+  
+  font-size: 75px;
+  margin: 0 0 21px 0;
+  font-weight: bold;
+  padding: 0;
+}
+.invitation .date-time .container2 p{
+  margin: 0;
+  padding: 0;
+}
+.invitation .date-time p {
+    margin: 0;
+    padding: 0;
+}
+.invitation .date-time div {
+    text-align: center;
+}
+
+.invitation .confirmation {
+    margin-top: 15px;
+    font-size: 14px;
+    font-style: italic;
+    color: var(--text-color-quaternary);
+}
+.invitation .confirm-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: var(--white-color);
+    background-color: var(--button-background-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: var(--font-family);	
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.invitation .confirm-button:hover {
+    background-color: var(--button-hover-color);
+    transform: translateY(-2px);
+}
+
