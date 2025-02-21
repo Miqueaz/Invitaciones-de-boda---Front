@@ -1,5 +1,5 @@
   document.getElementById('confirm-button').addEventListener('click', () => {
-      fetch('http://192.168.15.44:5000/registrar_asistencia', {
+      fetch('http://192.168.1.67:5000/registrar_asistencia', {
           method: 'POST',
           headers: {
               'Content-Type': 'application/json'

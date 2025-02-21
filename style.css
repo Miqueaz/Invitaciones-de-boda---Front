@@ -22,8 +22,8 @@
   
     --font-size: 16px;
     --font-family: 'Be Vietnam';
-    --font-family-secondary: 'Alex Brush';
-    --font-family-tertiary: 'Be Vietnam Bold';
+    --font-family-secondary: 'DayLove';
+    --font-family-tertiary: 'DayLove';
 }
 
 @font-face {
@@ -41,6 +41,15 @@
   src: url('fonts/be-vietnam/BeVietnam-Bold.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Nicolla';
+  src: url('fonts/nicolla/Nicollast\ Demo.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'DayLove';
+  src: url('fonts/daylove/Daylove_DEMO.ttf') format('truetype');
+}
 
 
 
@@ -59,8 +68,9 @@ body {
 
 .header {
   position: relative;
-  height: 50vh;
-  background: url('OIP.jpg') no-repeat center center/cover; 
+  height: 60vh;
+  margin-bottom: -60px;
+  background: url('FotoBoda.jpg') no-repeat center center/cover; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,7 +98,7 @@ body {
   width: 100%;
   height: 100px;
   flex: 1;
-  bottom: -42px;
+  bottom: 15px;
  
   
   align-items: flex-start;
@@ -194,6 +204,7 @@ body {
   display: flex;
   justify-content: center;
   margin: 20px;
+  margin-top: 70px;
   /* width: 500px; */
 }
 
@@ -231,7 +242,7 @@ body {
 .family h2{
   display: flex;
   flex-direction: column;
-  font-size: 15px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
 }
@@ -240,16 +251,17 @@ body {
   font-family: var(--font-family-tertiary);
   display: flex;
   justify-content: center;
-  font-size: 15px;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   border-bottom: 2px solid var(--border-color);
 }
 
 .invitation .dress-code .dressCodeImg {
-  width: 140px;
-  height: 270px; 
-  margin-top: 80px;
+
+  width: 180px;
+  height: 360px; 
+  margin-top: 90px;
   /* justify-content: center; */
   position: absolute;
   opacity: 0.2;
@@ -257,14 +269,31 @@ body {
 
 }
 
+.ubi-button{
+    height: 30px;
+    padding: 10px;
+    color: var(--white-color);
+    background-color: var(--button-background-color);
+    border-radius: 500px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1)
+}
+
+.qr{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .men{
-  left: 40px;
+  margin-left: 20px;
   background: url('Men\ -\ Code.png') no-repeat center center/cover;
 
 }
 
 .woman{
-  right: 60px;
+  margin-left: 0px;
   background: url('Woman-Code.png') no-repeat center center/cover;
 }
 
@@ -286,7 +315,7 @@ body {
 .dress .code h3 {
   flex: 1;
   font-family: var(--font-family); 
-  font-size: 12px;
+  font-size: 20px;
   font-weight: bold;
 }
 
@@ -352,6 +381,7 @@ body {
 }
 .invitation .date-time .container1{
   width: 120px;
+  padding: 10px;
   border-top: 2px solid var(--border-color);
   border-bottom: 2px solid var(--border-color);
 }
@@ -390,22 +420,105 @@ body {
 }
 .invitation .confirm-button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    font-size: 14px;
+    width: 200px;	
+    height: 200px;
+    font-size: 30px;
     color: var(--white-color);
     background-color: var(--button-background-color);
     border: none;
-    border-radius: 5px;
+    border-radius: 500px;
     text-decoration: none;
     font-weight: bold;
-    cursor: pointer;
+    /* cursor: pointer; */
     font-family: var(--font-family);	
-    transition: background-color 0.3s ease;
+    /* transition: background-color 0.3s ease; */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.invitation .confirm-button:hover {
+.invitation .confirm-button:active {
     background-color: var(--button-hover-color);
     transform: translateY(-2px);
 }
 
+.invitation .button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  width: 235px;	
+    height: 235px;
+    font-size: 30px;
+    color: var(--white-color);
+    background-color: var(--button-background-color);
+    border-radius: 501px;
+
+}
+button {
+  user-select: none; /* Evita que el texto se seleccione */
+  -webkit-user-select: none; /* Para navegadores WebKit como Chrome y Safari */
+  -moz-user-select: none; /* Para Firefox */
+  -ms-user-select: none; /* Para Edge */
+  outline: none; /* Evita el recuadro azul en algunos navegadores */
+}
+
+button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.ubi h2{
+  font-family: var(--font-family);
+  font-size: 12px;
+}
+
+
+
+.asistencia{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+@media (min-width: 1250px) {
+  .Base1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .Etapa.N2 {
+    margin-top: 97px;
+  }
+  .header {
+    position: relative;
+    height: 60vh;
+    margin-bottom: -60px;
+    background: url('OIP2.jpg') no-repeat center center/cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+@media (max-width: 1250px) {
+  .Base1 {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+  }
+  .Etapa.N2 {
+    margin-top: 0px;
+  }
+  .header {
+    position: relative;
+    height: 60vh;
+    margin-bottom: -60px;
+    background: url('FotoBoda.jpg') no-repeat center center/cover; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
